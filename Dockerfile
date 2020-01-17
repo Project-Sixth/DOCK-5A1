@@ -45,7 +45,7 @@ RUN echo '#!/bin/bash' > /docker-entrypoint.sh; \
     echo '' >> /docker-entrypoint.sh; \
     echo '#run server.' >> /docker-entrypoint.sh; \
     echo 'cd /data' >> /docker-entrypoint.sh; \
-    echo 'runuser -p -u minecraft -c "java -Xms${MIN_RAM} -Xmx${MAX_RAM} -jar /data/forge-${FORGE_VERSION}-universal.jar nogui"' >> /docker-entrypoint.sh; \
+    echo 'runuser minecraft -c "java -Xms${MIN_RAM} -Xmx${MAX_RAM} -jar /data/forge-${FORGE_VERSION}-universal.jar nogui"' >> /docker-entrypoint.sh; \
     chmod +x /docker-entrypoint.sh
 
 VOLUME /data

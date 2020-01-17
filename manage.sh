@@ -1,8 +1,9 @@
 #!/bin/bash
 
 software_name=Forge-Minecraft-Server
-container_name=minecraftforge
+container_name=minecraftforge-server
 image_name=theprojectsix/minecraftforge-server:1.12.2
+mount_dir=/srv/MinecraftForge
 
 case $1 in
     start)
@@ -34,7 +35,7 @@ case $1 in
         echo "I will create new $software_name"
         docker run \
         --name $container_name \
-        --volume /srv/Minecraft:/data \
+        --volume $mount_dir:/data \
         --publish 25565:25565 \
         --restart unless-stopped \
         --detach \
