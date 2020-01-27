@@ -27,7 +27,7 @@ Sadly, couldn't fit that to `debian:9-slim` for some reason.
   - /data *- contains every single file of your server*
 
 # Best usage
-For easiest usage of this image, I recommend you to use my manage script. It is available [**here**](https://github.com/Project-Sixth/DOCK-5A/blob/master/manage.sh), at my GitHub. After you download my script (for example, you can use command `curl -sL https://raw.githubusercontent.com/Project-Sixth/DOCK-5A/master/manage.sh > manage.sh; chmod +x manage.sh`), just follow next steps:
+For easiest usage of this image, I recommend you to use my manage script. It is available [**here**](https://github.com/Project-Sixth/DOCK-5A1/blob/master/manage.sh), at my GitHub. After you download my script (for example, you can use command `curl -sL https://raw.githubusercontent.com/Project-Sixth/DOCK-5A1/master/manage.sh > manage.sh; chmod +x manage.sh`), just follow next steps:
   1. Place script in any convinient place and make it executable (`chmod +x manage.sh`)
   2. Edit it with any editor and change mount directory to anywhere you find nessesary.
   3. Create new container by using command `manage.sh create`
